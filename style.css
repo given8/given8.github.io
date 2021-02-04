@@ -15,14 +15,19 @@ section {
   position: relative;
   min-height: 100vh;
   /*url(image) */
-  background: #111;
+  background: rgba(20, 20, 20, 0.9);
   background-size: cover;
   background-position: right;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
+.bgVid {
+  position: absolute;
+  z-index: -1;
+}
 .banner h2 {
   font-size: 3em;
   color: #fff;
@@ -73,12 +78,14 @@ header.sticky {
   background: #fff;
   padding: 20px 100px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
 }
 
 header.sticky .logo,
 header.sticky ul li a {
   color: #111;
 }
+
 
 header .logo {
   color: #fff;
@@ -119,13 +126,15 @@ header ul li a {
   font-size: 30px;
 }
 
-.content {
-  display: flex;
-  justify-content: space-between;
-}
 .contentBx h3 {
   font-size: 24px;
   margin-bottom: 10px;
+  text-align: center;
+}
+
+.contentBx p {
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 .contentBx {
@@ -135,13 +144,16 @@ header ul li a {
 .w50 {
   min-width: 50%;
 }
-
 img {
   max-width: 100%;
 }
 
 .services {
   background: #111;
+}
+
+.fab{
+  font-size: 40px;
 }
 
 .heading.white {
@@ -151,6 +163,7 @@ img {
 .services .content {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
 }
@@ -162,6 +175,7 @@ img {
   max-width: 340px;
   margin: 20px;
   text-align: center;
+  border-radius: 10px;
   transition: 0.5s;
 }
 
@@ -327,6 +341,19 @@ img {
     z-index: 999;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
+  .bgVid {
+    height: 100vh;
+    top: 0;
+  }
+
+  .contentBx{
+    margin: 0;
+    text-align: left;
+  }
+
+  .contentBx p{
+    max-width: 100%;
+  }
 
   .menu.active {
     left: 0;
@@ -361,11 +388,9 @@ img {
     padding: 150px 50px 100px;
   }
   .banner h2 {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
-  .banner h2 {
-    font-size: 1em;
-  }
+
   .btn {
     margin-top: 10px;
     padding: 10px 20px;
@@ -412,6 +437,13 @@ img {
     padding: 20px 20px;
   }
 
+  .content{
+    te
+  }
+
+  .img {
+    display: none;
+  }
   .banner {
     padding: 150px 20px 100px;
   }

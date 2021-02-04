@@ -1,6 +1,9 @@
 window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 0);
+  var headerText = document.querySelector(".logo");
+  window.scrollY > 0? headerText.innerHTML = "Given" : headerText.innerHTML = "Portfolio";
+  
 });
 
 function toggleMenu() {
