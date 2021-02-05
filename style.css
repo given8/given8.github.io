@@ -60,6 +60,10 @@ section {
   font-weight: 500;
 }
 
+.btn:hover {
+  background: rgb(247, 72, 107);
+}
+
 header {
   position: fixed;
   top: 0;
@@ -78,14 +82,12 @@ header.sticky {
   background: #fff;
   padding: 20px 100px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-
 }
 
 header.sticky .logo,
 header.sticky ul li a {
   color: #111;
 }
-
 
 header .logo {
   color: #fff;
@@ -152,7 +154,7 @@ img {
   background: #111;
 }
 
-.fab{
+.fab {
   font-size: 40px;
 }
 
@@ -202,10 +204,20 @@ img {
 .work .content .workBx {
   width: 50%;
   padding: 20px;
+  display: flex;
 }
 
-.work .content .workBx img {
-  max-width: 100%;
+.work .content .workBx p {
+  padding: 0 10px;
+}
+
+.appIcon {
+  height: 200px;
+}
+
+.playBtn {
+  display: block;
+  max-width: 150px;
 }
 
 .testimonial {
@@ -288,7 +300,7 @@ img {
 }
 
 .formBx form input[type="submit"] {
-  max-width: 100px;
+  max-width: 200px;
   background: #2196f3;
   cursor: pointer;
   text-transform: uppercase;
@@ -298,30 +310,23 @@ img {
 .contactInfo {
   min-width: 40%;
 }
-
-.contactInfoBx .box {
-  position: relative;
-  padding: 20px 0;
+.contact .content {
   display: flex;
+  justify-content: center;
 }
-.contactInfo .box .text {
-  display: flex;
-  margin-left: 0px;
-  font-size: 16px;
-  color: #fff;
-  flex-direction: column;
-  font-weight: 300;
+.contact .content .contactBx .fab,
+.contact .content .contactBx .fas {
+  font-size: 30px;
+  color: white;
 }
 
-.contactInfo .box .text h3 {
-  color: #2196f3;
-  font-weight: 500;
-  margin-bottom: 0;
+.contact .content .contactBx {
+  margin: 10px;
 }
 
 /* Responsiveness */
 
-@media (max-width: 991px) {
+@media (max-width: 1160px) {
   header,
   header.sticky {
     padding: 20px 50px;
@@ -346,12 +351,12 @@ img {
     top: 0;
   }
 
-  .contentBx{
+  .contentBx {
     margin: 0;
     text-align: left;
   }
 
-  .contentBx p{
+  .contentBx p {
     max-width: 100%;
   }
 
@@ -437,15 +442,21 @@ img {
     padding: 20px 20px;
   }
 
-  .content{
-    te
-  }
-
   .img {
     display: none;
   }
   .banner {
     padding: 150px 20px 100px;
+  }
+
+  .workBx {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .appIcon {
+    width: 200px;
+    margin: 0 auto;
   }
 
   section {
