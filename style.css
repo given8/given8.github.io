@@ -462,4 +462,8 @@ img {
   section {
     padding: 100px 20px;
   }
+
+  .contact .content {
+    flex-direction: row;
+  }
 }
