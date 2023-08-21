@@ -147,6 +147,7 @@ header ul li a {
 .contentBx p {
   max-width: 50%;
   margin: 0 auto;
+  text-align: justify;
 }
 
 .contentBx {
