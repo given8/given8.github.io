@@ -1,53 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script
-      src="https://kit.fontawesome.com/72bd56f807.js"
-      crossorigin="anonymous"
-    ></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Given Tshuma" />
-    <meta
-      property="og:description"
-      content="My personal website that showcases some of my work"
-    />
-    <meta property="og:url" content="given8.github.io" />
-    <meta
-      property="og:image"
-      content="https://given8.github.io/images/favicon.ico"
-    />
 
-    <title>Given</title>
-    <link rel="stylesheet" href="all.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="icon"
-      href="https://given8.github.io/images/favicon.ico"
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-    <header>
-      <a href="#" class="logo">Portfolio</a>
-      <div class="toggle"></div>
-      <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Skills</a></li>
-        <li><a href="#work">Past Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </header>
+<head>
+  <script src="https://kit.fontawesome.com/72bd56f807.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Given Tshuma" />
+  <meta property="og:description" content="My personal website that showcases some of my work" />
+  <meta property="og:url" content="given8.github.io" />
+  <meta property="og:image" content="https://given8.github.io/images/favicon.ico" />
+
+  <title>Given</title>
+  <link rel="stylesheet" href="all.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://given8.github.io/images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <nav role="navigation">
+    <a href="#" class="logo">Portfolio</a>
+    <div class="toggle"></div>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Skills</a></li>
+      <li><a href="#work">Past Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main role="main">
     <section class="banner" id="home">
-      <video
-        src="background.mp4"
-        defer
-        muted
-        loop
-        autoplay
-        class="bgVid"
-      ></video>
+      <video src="background.mp4" defer muted loop autoplay class="bgVid"></video>
       <div class="textBx">
         <h2>Hello,<br /><span>My name is Given.</span></h2>
         <h3>I am a Software Developer.</h3>
@@ -140,12 +123,7 @@
             mentor. It allows users to calculate tips and the total bill per
             person. The app makes use of RxJs, Parcel and Sass. The app is
             available
-            <a
-              href="https://pedantic-ardinghelli-a98a0b.netlify.app/"
-              class="link"
-              target="_blank"
-              >here</a
-            >
+            <a href="https://pedantic-ardinghelli-a98a0b.netlify.app/" class="link" target="_blank">here</a>
           </p>
         </div>
         <div class="workBx">
@@ -168,12 +146,7 @@
           </div>
         </div>
         <div class="workBx">
-          <img
-            src="images/EngConverter.png"
-            alt="EngConverter"
-            srcset=""
-            class="appIcon"
-          />
+          <img src="images/EngConverter.png" alt="EngConverter" srcset="" class="appIcon" />
           <p>
             This application was developed using Electron JS. It was designed to
             help me in my day to day tasks as a mechanical engineer. It converts
@@ -181,12 +154,7 @@
           </p>
         </div>
         <div class="workBx">
-          <img
-            src="images/wmsEventsIcon.png"
-            alt="wmsEventsIcon"
-            srcset=""
-            class="appIcon"
-          />
+          <img src="images/wmsEventsIcon.png" alt="wmsEventsIcon" srcset="" class="appIcon" />
           <p>
             This application was developed using in Android Studio using Java.
             It integrated with Google calendar to create and delete
@@ -196,6 +164,8 @@
         </div>
       </div>
     </section>
+  </main>
+  <footer role="footer">
     <section class="contact">
       <div class="heading white">
         <h2>Contact Me</h2>
@@ -209,11 +179,13 @@
         </div>
         <div class="contactBx">
           <a href="mailto:given8@gmail.com">
-            <i class="fas fa-envelope"></i>
+            <i class="fas fa-envelope" alt="click to send an email to the website creator"></i>
           </a>
         </div>
       </div>
     </section>
-    <script src="index.js"></script>
-  </body>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
 </html>
